@@ -4,7 +4,14 @@ const db = new sqlite3.Database('test2.db');
 let schema = `
 create table test(
   id integer primary key,
-  name text
+  name text not null,
+  variety text not null,
+  attribute text not null,
+  type text not null,
+  level integer,
+  rank integer,
+  attack integer not null,
+  defense integer not null
 );
 `
 
